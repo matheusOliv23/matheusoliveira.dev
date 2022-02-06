@@ -28,12 +28,5 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 <!-- CONTACT -->
 </br>
 
-# **Contact**
 
-### Renan Oliveira - **renanlido@yahoo.com.br**
 
-[Github](https://github.com/renanlido) - **https://github.com/renanlido** </br>
-[Linkedin](https://www.linkedin.com/in/renanlido/) - **https://www.linkedin.com/in/renanlido/**
-
-</br></br>
-Thanks for coming! 😊🤗
