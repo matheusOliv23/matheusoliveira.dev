@@ -7,6 +7,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Experience from '../components/Experience';
 import theme from '../styles/theme';
+import Projetos from '../components/Projetos';
 
 export default function Home() {
   useEffect(() => {
@@ -30,6 +31,8 @@ export default function Home() {
           }}
         ></div>
         <Experience />
+
+        <Projetos />
       </main>
     </HomeContainer>
   );
