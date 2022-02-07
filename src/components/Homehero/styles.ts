@@ -100,8 +100,14 @@ export const CodeItem = styled.pre`
     width: 100%;
   }
 
+  > pre {
+    transition: 0.5s;
+  }
+
   &:hover {
     filter: brightness(1.2);
+    transform: scale(1.2);
+    cursor: pointer;
   }
 
   &:last-child {

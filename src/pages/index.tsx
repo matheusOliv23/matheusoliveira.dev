@@ -5,6 +5,8 @@ import Homehero from '../components/Homehero';
 import { HomeContainer } from '../styles/HomeStyles';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Experience from '../components/Experience';
+import theme from '../styles/theme';
 
 export default function Home() {
   useEffect(() => {
@@ -21,6 +23,13 @@ export default function Home() {
 
       <main className="container">
         <Homehero />
+        <div
+          style={{
+            width: '100%',
+            borderBottom: '3px solid #0EE7B7'
+          }}
+        ></div>
+        <Experience />
       </main>
     </HomeContainer>
   );
