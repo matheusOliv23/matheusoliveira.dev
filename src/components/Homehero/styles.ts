@@ -85,7 +85,6 @@ export const CodeItem = styled.pre`
   background: ${({ theme }) => theme.gradient};
   padding: 2rem;
   font-family: 'Jetbrains Mono', monospace;
-  font-weight: 300;
   color: #fff;
   width: 24rem;
   align-self: flex-start;
@@ -94,7 +93,7 @@ export const CodeItem = styled.pre`
   @media (max-width: 1450px) {
     width: 18rem;
     padding: 1.5rem;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
   @media (max-width: 1000px) {
     width: 100%;

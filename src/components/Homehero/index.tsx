@@ -25,7 +25,7 @@ function Homehero() {
             {'\u007D'}
           </CodeItem>
           <CodeItem data-aos="fade-left">
-            <span className="comment">//Sobre mim</span>
+            <span className="comment">//Região</span>
             <span className="purple">localizacao</span> {'\u007B'}
             <div>
               cidade: <span className="blue">Sete Lagoas</span>
