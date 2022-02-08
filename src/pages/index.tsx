@@ -25,22 +25,33 @@ export default function Home() {
 
       <main className="container">
         <Homehero />
+
         <div
           style={{
             width: '100%',
             borderBottom: '3px solid #0EE7B7'
           }}
         ></div>
+
         <Experience />
 
         <Projetos />
+
         <div
           style={{
             width: '100%',
             borderBottom: '3px solid #0EE7B7'
           }}
         ></div>
+
         <Conhecimentos />
+
+        <div
+          style={{
+            width: '100%',
+            borderBottom: '3px solid #0EE7B7'
+          }}
+        ></div>
       </main>
     </HomeContainer>
   );
