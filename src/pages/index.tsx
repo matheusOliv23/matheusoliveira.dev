@@ -8,6 +8,7 @@ import 'aos/dist/aos.css';
 import Experience from '../components/Experience';
 import theme from '../styles/theme';
 import Projetos from '../components/Projetos';
+import Conhecimentos from '../components/Conhecimentos';
 
 export default function Home() {
   useEffect(() => {
@@ -33,6 +34,13 @@ export default function Home() {
         <Experience />
 
         <Projetos />
+        <div
+          style={{
+            width: '100%',
+            borderBottom: '3px solid #0EE7B7'
+          }}
+        ></div>
+        <Conhecimentos />
       </main>
     </HomeContainer>
   );

@@ -26,12 +26,12 @@ function Homehero() {
           </CodeItem>
           <CodeItem data-aos="fade-left">
             <span className="comment">//Sobre mim</span>
-            <span className="purple">Infos</span> {'\u007B'}
+            <span className="purple">localizacao</span> {'\u007B'}
             <div>
-              Nome: <span className="blue">Matheus</span>
+              cidade: <span className="blue">Sete Lagoas</span>
             </div>
             <div>
-              Sobrenome: <span className="blue">Oliveira</span>
+              estado: <span className="blue">Minas Grais</span>
             </div>
             {'\u007D'}
           </CodeItem>
