@@ -9,6 +9,7 @@ import Experience from '../components/Experience';
 import theme from '../styles/theme';
 import Projetos from '../components/Projetos';
 import Conhecimentos from '../components/Conhecimentos';
+import FormContato from '../components/FormContato';
 
 export default function Home() {
   useEffect(() => {
@@ -52,6 +53,8 @@ export default function Home() {
             borderBottom: '3px solid #0EE7B7'
           }}
         ></div>
+
+        <FormContato />
       </main>
     </HomeContainer>
   );
