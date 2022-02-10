@@ -10,6 +10,7 @@ import theme from '../styles/theme';
 import Projetos from '../components/Projetos';
 import Conhecimentos from '../components/Conhecimentos';
 import FormContato from '../components/FormContato';
+import Footer from '../components/Footer';
 
 export default function Home() {
   useEffect(() => {
@@ -56,6 +57,7 @@ export default function Home() {
 
         <FormContato />
       </main>
+      <Footer />
     </HomeContainer>
   );
 }

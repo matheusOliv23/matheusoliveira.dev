@@ -31,7 +31,7 @@ function Homehero() {
               cidade: <span className="blue">Sete Lagoas</span>
             </div>
             <div>
-              estado: <span className="blue">Minas Grais</span>
+              estado: <span className="blue">Minas Gerais</span>
             </div>
             {'\u007D'}
           </CodeItem>
