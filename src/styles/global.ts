@@ -31,7 +31,7 @@ export default createGlobalStyle`
     list-style: none;
   }
   button {
-    cursor: pointer;
+    cursor: pointer;   
   }
   a {
     text-decoration: none;

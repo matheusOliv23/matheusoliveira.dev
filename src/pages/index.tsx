@@ -1,12 +1,11 @@
 import Head from 'next/head';
 import { useEffect } from 'react';
+import Aos from 'aos';
 import Header from '../components/Header';
 import Homehero from '../components/Homehero';
 import { HomeContainer } from '../styles/HomeStyles';
-import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Experience from '../components/Experience';
-import theme from '../styles/theme';
 import Projetos from '../components/Projetos';
 import Conhecimentos from '../components/Conhecimentos';
 import FormContato from '../components/FormContato';
@@ -33,7 +32,7 @@ export default function Home() {
             width: '100%',
             borderBottom: '3px solid #0EE7B7'
           }}
-        ></div>
+        />
 
         <Experience />
 
@@ -44,7 +43,7 @@ export default function Home() {
             width: '100%',
             borderBottom: '3px solid #0EE7B7'
           }}
-        ></div>
+        />
 
         <Conhecimentos />
 
@@ -53,7 +52,7 @@ export default function Home() {
             width: '100%',
             borderBottom: '3px solid #0EE7B7'
           }}
-        ></div>
+        />
 
         <FormContato />
       </main>
