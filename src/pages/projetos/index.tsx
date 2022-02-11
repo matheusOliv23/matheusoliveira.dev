@@ -10,25 +10,25 @@ export default function Projetos() {
         <ProjetosItem
           titulo="Projeto 01"
           tipo="Website"
-          rota="teste"
+          id="testes"
           imgUrl="https://thumbs.dreamstime.com/z/high-tech-technology-background-8247407.jpg"
         />
         <ProjetosItem
           titulo="Projeto 01"
           tipo="Website"
-          rota="teste"
+          id="testes"
           imgUrl="https://thumbs.dreamstime.com/z/high-tech-technology-background-8247407.jpg"
         />
         <ProjetosItem
           titulo="Projeto 01"
           tipo="Website"
-          rota="teste"
+          id="testes"
           imgUrl="https://thumbs.dreamstime.com/z/high-tech-technology-background-8247407.jpg"
         />
         <ProjetosItem
           titulo="Projeto 01"
           tipo="Website"
-          rota="teste"
+          id="testes"
           imgUrl="https://thumbs.dreamstime.com/z/high-tech-technology-background-8247407.jpg"
         />
       </main>

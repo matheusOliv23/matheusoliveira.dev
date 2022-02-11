@@ -13,19 +13,19 @@ function Projetos() {
         <ProjetoItem
           title="Projeto 01"
           type="Website"
-          slug="testes"
+          id="testes"
           img="https://thumbs.dreamstime.com/z/high-tech-technology-background-8247407.jpg"
         />
         <ProjetoItem
           title="Projeto 01"
           type="Website"
-          slug="testes"
+          id="testes"
           img="https://thumbs.dreamstime.com/z/high-tech-technology-background-8247407.jpg"
         />
         <ProjetoItem
           title="Projeto 01"
           type="Website"
-          slug="testes"
+          id="testes"
           img="https://thumbs.dreamstime.com/z/high-tech-technology-background-8247407.jpg"
         />
       </section>

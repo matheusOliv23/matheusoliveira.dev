@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react/self-closing-comp */
 import Link from 'next/link';
 import { Container } from './styles';
 
@@ -5,18 +7,18 @@ interface ProjetoItemProps {
   titulo: string;
   tipo: string;
   imgUrl: string;
-  rota: string;
+  id: string;
 }
 
 export default function ProjetosItem({
   titulo,
   tipo,
   imgUrl,
-  rota
+  id
 }: ProjetoItemProps) {
   return (
     <Container imgUrl={imgUrl}>
-      <Link href={`/projetos/${rota}`}>
+      <Link href={`/projetos/${id}`}>
         <a>
           <div className="overlay"></div>
           <section>

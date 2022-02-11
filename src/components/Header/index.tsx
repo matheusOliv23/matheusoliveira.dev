@@ -1,22 +1,18 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { ReactNode } from 'react';
 import Navlink from './Navlink';
 
 import { Container } from './styles';
 
-const menus = [
-  { name: 'Home', rota: '/' },
-  { name: 'Projetos', rota: '/projetos' },
-  { name: 'Contato', rota: '/contato' }
-];
-
-
 function Header() {
   return (
     <Container>
       <ul>
-        {menus.map((menu, index) => (
-          <Navlink key={index} title={menu.name} path={menu.rota} />
-        ))}
+        <Navlink titulo="Home" rota="/" />
+        <Navlink titulo="Projetos" rota="/projetos" includes />
       </ul>
     </Container>
   );
