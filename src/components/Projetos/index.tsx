@@ -27,6 +27,7 @@ function Projetos({ projetos }: ProjetosProps) {
       <section>
         {projetos.slice(0, 3).map(projeto => (
           <ProjetoItem
+            key={projeto.id}
             title={projeto.titulo}
             type={projeto.tipo}
             id={projeto.id}
