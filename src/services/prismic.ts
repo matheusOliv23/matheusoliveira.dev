@@ -2,7 +2,7 @@ import Prismic from '@prismicio/client';
 import { DefaultClient } from '@prismicio/client/types/client';
 
 const baseUrl = `${
-  process.env.PRISMIC_API_ENDPOINT || 'http://localhost:8080'
+  process.env.PRISMIC_API_ENDPOINT || 'http://localhost:3000'
 }/`;
 
 export function getPrismicClient(req?: unknown): DefaultClient {
