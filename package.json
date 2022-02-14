@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@prismicio/client": "5.1.0",
+    "@slicemachine/init": "^1.1.0",
     "aos": "^2.3.4",
     "next": "10.2.0",
     "next-images": "^1.7.0",

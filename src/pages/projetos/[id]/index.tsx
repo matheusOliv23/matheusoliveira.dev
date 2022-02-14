@@ -4,33 +4,86 @@ import { ProjetoContainer } from '../../../styles/ProjetoContainer';
 import BannerProjeto from '../../../components/BannerProjeto';
 import Header from '../../../components/Header';
 
-export default function Projeto() {
+import { GetStaticPaths, GetStaticProps } from 'next';
+import { getPrismicClient } from '../../../services/prismic';
+import Prismic from '@prismicio/client';
+import { useRouter } from 'next/router';
+import LoadingScreen from '../../../components/LoadingScreen';
+
+interface IProjeto {
+  id: string;
+  titulo: string;
+  tipo: string;
+  descricao: string;
+  img: string;
+  link: string;
+}
+
+interface ProjetoProps {
+  projeto: IProjeto;
+}
+
+export default function Projeto({ projeto }: ProjetoProps) {
+  const router = useRouter();
+
+  if (router.isFallback) {
+    return <LoadingScreen />;
+  }
+
   return (
     <ProjetoContainer>
       <Header />
       <BannerProjeto
-        titulo="Projeto 01"
-        tipo="Website"
-        imgUrl="https://thumbs.dreamstime.com/z/high-tech-technology-background-8247407.jpg"
+        titulo={projeto.titulo}
+        tipo={projeto.tipo}
+        imgUrl={projeto.img}
       />
 
       <main>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas,
-          nesciunt! Excepturi veniam dolore sunt cupiditate quod possimus a
-          quasi similique exercitationem aspernatur quo repudiandae deserunt ut
-          debitis quibusdam, quaerat voluptatibus odit facere harum incidunt
-          adipisci earum autem maxime! Necessitatibus temporibus nisi alias quae
-          aliquam omnis, quasi eveniet soluta minus, repellat fuga dolores
-          repellendus expedita atque accusamus! Eligendi vero eveniet,
-          exercitationem architecto temporibus esse sapiente eaque odio mollitia
-          laudantium dolor corrupti suscipit eum, consequatur quasi doloribus
-          rem ipsam facere sunt molestiae.
-        </p>
+        <p>{projeto.descricao}</p>
         <button type="button">
-          <a href="#">Ver projeto online</a>
+          <a href={projeto.link}>Ver projeto online</a>
         </button>
       </main>
     </ProjetoContainer>
   );
 }
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const prismic = getPrismicClient();
+  const projetos = await prismic.query([
+    Prismic.predicates.at('document.type', 'pro')
+  ]);
+
+  const paths = projetos.results.map(projeto => ({
+    params: {
+      id: projeto.uid
+    }
+  }));
+
+  return {
+    paths,
+    fallback: true
+  };
+};
+
+export const getStaticProps: GetStaticProps = async context => {
+  const prismic = getPrismicClient();
+  const { id } = context.params;
+
+  const response = await prismic.getByUID('projeto', String(id), {});
+
+  const projeto = {
+    id: response.uid,
+    titulo: response.data.titulo,
+    tipo: response.data.tipo,
+    img: response.data.img.url,
+    descricao: response.data.descricao,
+    link: response.data.link.url
+  };
+
+  return {
+    props: { projeto },
+    revalidate: 86400 //conteúdo vai revalidar a cada 24h
+  };
+};
