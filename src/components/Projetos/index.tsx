@@ -4,30 +4,35 @@ import ProjetoItem from './ProjetoItem';
 
 import { Container } from './styles';
 
-function Projetos() {
+interface IProjeto {
+  id: string;
+  titulo: string;
+  tipo: string;
+  descricao: string;
+  img: string;
+  link: string;
+}
+
+interface ProjetosProps {
+  projetos: IProjeto[];
+}
+
+function Projetos({ projetos }: ProjetosProps) {
+  console.log(projetos);
+
   return (
     <Container>
       <SectionTitle title="Últimos projetos" />
 
       <section>
-        <ProjetoItem
-          title="Projeto 01"
-          type="Website"
-          id="testes"
-          img="https://thumbs.dreamstime.com/z/high-tech-technology-background-8247407.jpg"
-        />
-        <ProjetoItem
-          title="Projeto 01"
-          type="Website"
-          id="testes"
-          img="https://thumbs.dreamstime.com/z/high-tech-technology-background-8247407.jpg"
-        />
-        <ProjetoItem
-          title="Projeto 01"
-          type="Website"
-          id="testes"
-          img="https://thumbs.dreamstime.com/z/high-tech-technology-background-8247407.jpg"
-        />
+        {projetos.slice(0, 3).map(projeto => (
+          <ProjetoItem
+            title={projeto.titulo}
+            type={projeto.tipo}
+            id={projeto.id}
+            img={projeto.img}
+          />
+        ))}
       </section>
 
       <button type="button">
