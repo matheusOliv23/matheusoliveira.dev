@@ -52,7 +52,7 @@ export default function Projeto({ projeto }: ProjetoProps) {
 export const getStaticPaths: GetStaticPaths = async () => {
   const prismic = getPrismicClient();
   const projetos = await prismic.query([
-    Prismic.Predicates.at('document.type', 'projeto')
+    Prismic.predicates.at('document.type', 'projeto')
   ]);
 
   const paths = projetos.results.map(projeto => ({
