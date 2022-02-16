@@ -17,7 +17,7 @@ export default function ProjetosItem({
   id
 }: ProjetoItemProps) {
   return (
-    <Container imgUrl={imgUrl}>
+    <Container imgUrl={imgUrl} data-aos="zoom-in">
       <Link href={`/projetos/${id}`}>
         <a>
           <div className="overlay"></div>
