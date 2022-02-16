@@ -42,7 +42,10 @@ export default class MyDocument extends Document {
       <Html lang="pt-br">
         <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
-
+          <link
+            rel="shortcut icon"
+            href="https://og-image.vercel.app/Matheus%20Oliveira.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-white-logo.svg"
+          />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link

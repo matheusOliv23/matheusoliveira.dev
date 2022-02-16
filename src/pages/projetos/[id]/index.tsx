@@ -9,6 +9,7 @@ import { getPrismicClient } from '../../../services/prismic';
 import Prismic from '@prismicio/client';
 import { useRouter } from 'next/router';
 import LoadingScreen from '../../../components/LoadingScreen';
+import Head from 'next/head';
 
 interface IProjeto {
   id: string;
@@ -32,6 +33,15 @@ export default function Projeto({ projeto }: ProjetoProps) {
 
   return (
     <ProjetoContainer>
+      <Head>
+        <title>{projeto.titulo} | Matheus Oliveira</title>
+        <meta name="description" content={projeto.descricao} />
+        <meta property="og:image" content={projeto.img} />
+        <meta property="og:image:secure_url" content={projeto.img} />
+        <meta name="twitter:image" content={projeto.img} />
+        <meta name="twitter:image:src" content={projeto.img} />
+        <meta property="og:description" content={projeto.descricao} />
+      </Head>
       <Header />
       <BannerProjeto
         titulo={projeto.titulo}
