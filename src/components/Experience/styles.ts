@@ -28,12 +28,14 @@ export const ItemContainer = styled.div`
     background: ${({ theme }) => theme.gradient};
     padding: 1rem;
     padding-top: 1.5rem;
-    height: 20rem;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     transition: 0.5s;
+    max-width: 20rem;
+    text-align: left;
 
     h1 {
       color: ${({ theme }) => theme.primary};
@@ -96,6 +98,7 @@ export const ItemContainer = styled.div`
     > div {
       height: auto;
       padding: 2rem;
+      max-width: 100%;
 
       h1 {
         font-size: 2rem;
