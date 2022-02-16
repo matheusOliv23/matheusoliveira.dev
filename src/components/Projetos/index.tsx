@@ -18,8 +18,6 @@ interface ProjetosProps {
 }
 
 function Projetos({ projetos }: ProjetosProps) {
-  console.log(projetos);
-
   return (
     <Container>
       <SectionTitle title="Últimos projetos" />
