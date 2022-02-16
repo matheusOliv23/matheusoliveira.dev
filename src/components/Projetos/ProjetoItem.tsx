@@ -19,7 +19,7 @@ export default function ProjetoItem({
   img
 }: ProjetoProperties) {
   return (
-    <ProjetoContainer imgUrl={img}>
+    <ProjetoContainer data-aos="zoom-in" imgUrl={img}>
       <section>
         <div className="overlay" />
         <div className="text">

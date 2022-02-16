@@ -29,9 +29,12 @@ interface HomeProps {
 }
 
 export default function Home({ projetos }: HomeProps) {
+
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
+
+  
   return (
     <HomeContainer>
       <Head>
