@@ -11,12 +11,12 @@ function Experience() {
         <ExperienceItem
           year="2022 - Freelancer"
           office="Dev Front-End"
-          description="Atualmente trabalhando no desenvolvimento de uma plataforma de ensino  utilizando NextJs, Typescript, MaterialUI "
+          description="Trabalhei no desenvolvimento de uma plataforma de ensino  utilizando NextJs, Typescript, MaterialUI "
         />
         <ExperienceItem
           year="2022"
           office="Aberto a oportunidades"
-          description="Trabalho atualmente como freelancer e posso tranquilamente conciliar meus horários com uma nova oportunidade de trabalho para ganhar mais experiência e adquirir conhecimento. "
+          description="Busco uma oportunidade na área de desenvolvimento web, tanto para me desenvolver profissionalmente quanto para agregar valor para a empresa onde eu estiver"
         />
       </section>
     </Container>
