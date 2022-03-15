@@ -14,6 +14,7 @@ import Footer from '../components/Footer';
 import { GetStaticProps } from 'next';
 import { getPrismicClient } from '../services/prismic';
 import Prismic from '@prismicio/client';
+import { motion } from 'framer-motion';
 
 interface IProjeto {
   id: string;
@@ -29,12 +30,10 @@ interface HomeProps {
 }
 
 export default function Home({ projetos }: HomeProps) {
-
   useEffect(() => {
-    Aos.init({ duration: 1500 });
+    Aos.init({ duration: 1000 });
   }, []);
 
-  
   return (
     <HomeContainer>
       <Head>

@@ -1,5 +1,6 @@
 import { Container, TextContainer, InfosContainer, CodeItem } from './styles';
 import picture from '../../assets/theus-edit.png';
+import { motion } from 'framer-motion/dist/framer-motion';
 
 function Homehero() {
   return (
@@ -8,8 +9,8 @@ function Homehero() {
 
       <div>
         <TextContainer>
-          <h1 data-aos="zoom-in">Olá</h1>
-          <h2 data-aos="zoom-in">Me chamo Matheus</h2>
+          <h1>Olá</h1>
+          <h2>Me chamo Matheus</h2>
         </TextContainer>
 
         <InfosContainer>

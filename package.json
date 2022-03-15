@@ -12,6 +12,7 @@
     "@slicemachine/init": "^1.1.0",
     "aos": "^2.3.4",
     "axios": "^0.26.0",
+    "framer-motion": "^6.2.8",
     "next": "10.2.0",
     "next-images": "^1.7.0",
     "nextjs-progressbar": "^0.0.13",
