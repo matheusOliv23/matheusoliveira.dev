@@ -19,7 +19,7 @@ const animStar = keyframes`
         transform: translateY(0px);
     }
     to {
-        transform: translateY(-7000px);
+        transform: translateY(-3000px);
     }
 `;
 
@@ -27,7 +27,7 @@ export const Stars = styled.div`
   width: 1px;
   height: 1px;
   background: transparent;
-  animation: ${animStar} 200s linear infinite;
+  animation: ${animStar} 400s linear infinite;
   box-shadow: 779px 1331px #fff, 324px 42px #fff, 303px 586px #fff,
     1312px 276px #fff, 451px 625px #fff, 521px 1931px #fff, 1087px 1871px #fff,
     36px 1546px #fff, 132px 934px #fff, 1698px 901px #fff, 1418px 664px #fff,

@@ -5,40 +5,9 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 2rem;
   padding: 2rem;
-
-  /* > img {
-    width: 35rem;
-    flex: 1;
-  }
-
-  > div {
-    flex: 4;
-  }
-
-  @media (max-width: 1450px) {
-    > img {
-      width: 35rem;
-    }
-
-    > div {
-      flex: 1;
-    }
-  }
-
-  @media (max-width: 1000px) {
-    > img {
-      width: 22rem;
-    }
-  }
-
-  @media (max-width: 700px) {
-    flex-direction: column-reverse;
-    > div {
-      width: 100%;
-    }
-  } */
 `;
 
 export const Circulo = styled.div`
@@ -58,6 +27,7 @@ export const Img = styled.img`
 
 export const TextContainer = styled.section`
   margin-bottom: 2rem;
+  text-align: center;
   width: 100%;
 
   h1 {
