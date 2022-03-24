@@ -1,15 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin-top: 5rem;
   padding: 2rem;
 
-  > img {
+  /* > img {
     width: 35rem;
     flex: 1;
   }
@@ -39,7 +38,22 @@ export const Container = styled.div`
     > div {
       width: 100%;
     }
-  }
+  } */
+`;
+
+export const Circulo = styled.div`
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  border: 5px solid ${({ theme }) => theme.primary};
+  box-shadow: 0px 4px 29px 5px rgba(32, 104, 199, 0.66);
+`;
+
+export const Img = styled.img`
+  border-radius: 50%;
+  object-fit: cover;
+  /* width: 20rem;
+  height: 20rem; */
 `;
 
 export const TextContainer = styled.section`

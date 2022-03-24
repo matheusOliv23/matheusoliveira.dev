@@ -66,8 +66,8 @@ export default function Home({ projetos }: HomeProps) {
       <Header />
 
       <Stars />
-      <Stars2 />
-      <Stars3 />
+      {/* <Stars2 /> */}
+      {/* <Stars3 /> */}
       <main className="container">
         <Homehero />
 

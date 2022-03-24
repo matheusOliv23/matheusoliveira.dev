@@ -10,9 +10,9 @@ export const Container = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
+  /* position: fixed; */
   height: 4rem;
-  font-size: 2rem;
+  font-size: 1.3rem;
   border-bottom: 1px solid ${({ theme }) => theme.backgroundLight}; // a borda abaixo do navbar
 
   ul {
