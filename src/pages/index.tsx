@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import Aos from 'aos';
 import Header from '../components/Header';
 import Homehero from '../components/Homehero';
-import { HomeContainer } from '../styles/HomeStyles';
+import { HomeContainer, Stars, Stars2, Stars3 } from '../styles/HomeStyles';
 import 'aos/dist/aos.css';
 import Experience from '../components/Experience';
 import Projetos from '../components/Projetos';
@@ -65,6 +65,9 @@ export default function Home({ projetos }: HomeProps) {
       </Head>
       <Header />
 
+      <Stars />
+      <Stars2 />
+      <Stars3 />
       <main className="container">
         <Homehero />
 

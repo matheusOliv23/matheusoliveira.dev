@@ -7,6 +7,7 @@ export const Container = styled.div`
   justify-content: center;
   gap: 2rem;
   margin-top: 5rem;
+  padding: 2rem;
 
   > img {
     width: 35rem;

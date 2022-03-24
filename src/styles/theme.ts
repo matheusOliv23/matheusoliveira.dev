@@ -1,7 +1,11 @@
+import { DiBlackberry } from 'react-icons/di';
+
 const theme = {
-  background: '#11172B',
+  // background: '#11172B',
+  background: 'black',
   backgroundLight: '#1B2138',
-  primary: '#0EE7B7',
+  // primary: '#0EE7B7',
+  primary: '#2068C7',
   secondary: '#7AC7E3',
   gradient: 'linear-gradient(225deg, #313860 0%, #11172B 100%);',
   text: '#848DA0',
