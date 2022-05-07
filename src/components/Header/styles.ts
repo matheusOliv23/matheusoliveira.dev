@@ -32,14 +32,14 @@ export const NavlinkContainer = styled.li<NavlinkProps>`
             .textHighlight}; //muda a cor do link caso ele esteja ativo ou não
     transition: 0.5s;
 
-    &:hover {
+    /* &:hover {
       color: ${props =>
-        props.isActive
-          ? lighten(0.2, props.theme.primary)
-          : lighten(
-              0.2,
-              props.theme.secondary
-            )}; // muda o hover caso o link esteja ativo ou não
-    }
+      props.isActive
+        ? lighten(0.2, props.theme.primary)
+        : lighten(
+            0.2,
+            props.theme.secondary
+          )}; // muda o hover caso o link esteja ativo ou não
+    } */
   }
 `;

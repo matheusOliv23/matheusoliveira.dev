@@ -2,7 +2,6 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { ReactNode } from 'react';
 import Navlink from './Navlink';
 
 import { Container } from './styles';
