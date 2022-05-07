@@ -22,7 +22,7 @@ export default function Navlink({ titulo, rota, includes = false }: LinkProps) {
     return rota === router.pathname;
   }
 
-  const isActive = verificarSeAtivo(); //verifica se a rota atual é igual ao caminho do link, caso seja verdade isActive será true
+  const isActive = verificarSeAtivo(); // verifica se a rota atual é igual ao caminho do link, caso seja verdade isActive será true
 
   return (
     <NavlinkContainer isActive={isActive}>
