@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { NavlinkContainer } from 'src/components/Header/styles';
+import NavlinkContainer from '../components/Header/Navlink';
 import Navlink from '../components/Header/Navlink';
 
 jest.mock('next/router', () => {
