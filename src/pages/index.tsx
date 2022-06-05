@@ -15,6 +15,7 @@ import { GetStaticProps } from 'next';
 import { getPrismicClient } from '../services/prismic';
 import Prismic from '@prismicio/client';
 import { motion } from 'framer-motion';
+import { Widget } from '../components/Widget/FeedbackWidget/Widget';
 
 interface IProjeto {
   id: string;
@@ -97,7 +98,7 @@ export default function Home({ projetos }: HomeProps) {
             borderBottom: '3px solid #0EE7B7'
           }}
         />
-
+        {/* <Widget /> */}
         <FormContato />
       </main>
       <Footer />

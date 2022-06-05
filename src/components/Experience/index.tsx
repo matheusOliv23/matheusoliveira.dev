@@ -6,7 +6,7 @@ import { Container } from './styles';
 function Experience() {
   return (
     <Container>
-      <SectionTitle title="04 meses" description="de experiência" />
+      <SectionTitle title="08 meses" description="de experiência" />
       <section>
         <ExperienceItem
           year="2022 - Freelancer"

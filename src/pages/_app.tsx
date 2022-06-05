@@ -1,6 +1,7 @@
 import { ThemeProvider } from 'styled-components';
 import NextProgress from 'nextjs-progressbar';
 import GlobalStyles from '../styles/global';
+import '../styles/global.css';
 import theme from '../styles/theme';
 import { Toaster } from 'react-hot-toast';
 import { AnimatePresence } from 'framer-motion/dist/framer-motion';
