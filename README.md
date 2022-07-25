@@ -5,9 +5,12 @@
 <!--LOGO-->
 <br/>
 <div align="center">
-    <h1 color="#ffff" >Personal porftólio construído com Next Js, Typescript, ESlint, Prettier e Styled-Components</h1>  
+    <h1 color="#ffff" >Portfólio pessoal</h1>
+
 
 </div>
+
+![images](https://user-images.githubusercontent.com/78116908/180888577-d8b10b28-766b-4b2e-ab9b-cf9e810f6321.png)
 
 
 <!-- ABOUT THE PROJECT -->
