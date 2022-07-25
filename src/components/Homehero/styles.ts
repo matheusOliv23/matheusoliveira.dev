@@ -8,6 +8,36 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
+
+  > a {
+    svg {
+      width: 2rem;
+      height: 2rem;
+      color: ${({ theme }) => theme.text};
+      transition: 0.5s;
+      cursor: pointer;
+
+      &:hover {
+        color: ${({ theme }) => theme.primary};
+      }
+    }
+  }
+`;
+
+export const Icons = styled.div`
+  display: flex;
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+    color: ${({ theme }) => theme.text};
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      color: ${({ theme }) => theme.primary};
+    }
+  }
 `;
 
 export const Circulo = styled.div`
@@ -51,7 +81,7 @@ export const TextContainer = styled.section`
 
   @media (max-width: 1000px) {
     h1 {
-      font-size: 3rem;
+      font-size: 2.2rem;
     }
     h2 {
       font-size: 1.5rem;

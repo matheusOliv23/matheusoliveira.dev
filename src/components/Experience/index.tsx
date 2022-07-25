@@ -6,12 +6,12 @@ import { Container } from './styles';
 function Experience() {
   return (
     <Container>
-      <SectionTitle title="08 meses" description="de experiência" />
+      <SectionTitle title="10 meses" description="de experiência" />
       <section>
         <ExperienceItem
           year="2022 - Freelancer"
           office="Dev Front-End"
-          description="Trabalhei no desenvolvimento de uma plataforma de ensino  utilizando NextJs, Typescript, MaterialUI "
+          description="Trabalho no desenvolvimento de uma plataforma de ensino  utilizando NextJs, Typescript, MaterialUI "
         />
         <ExperienceItem
           year="2022"
